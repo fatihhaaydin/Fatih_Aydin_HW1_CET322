@@ -1,0 +1,76 @@
+﻿@model BookClass
+@*
+*@
+@{
+}
+<html>
+    <head>
+        <style>
+            table{
+                border: 5px solid black;
+                border-collapse: collapse;
+                width: 50%;
+            }
+            th, td {
+            border: 5px solid black;
+            padding: 38px;
+            text-align: left;
+            }
+
+            .over {
+                background-color: red;
+                color: white;
+            }
+
+            .soon {
+                background-color: yellow;
+            }
+
+            .notover {
+                background-color: green;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+            <th>Book Name</th>
+            <td>@Model.book_name</td>
+            </tr>
+            <tr>
+                <th>Author</th>
+                <td>@Model.author</td>
+            </tr>
+            <tr>
+                <th>Page Number</th>
+                <td>@Model.page_number</td>
+            </tr>
+            <tr>
+                <th>Due Date</th>
+                <td>@Model.due_date</td>
+            </tr>
+            <tr>
+                <th>Remaining Days Detector</th>
+            <td class="
+                @(Model.detector < 0 ? "over" :
+                @Model.detector <= 0 ? "soon" : "notover")">
+                @Model.detector
+            </td>
+            </tr>
+        </table>
+        <script>
+            /*var cell = document.getElementById("onlycell")
+            if(@Model.detector>0){
+                cell.style.backgroundColor = "green"
+            }
+            if (@Model.detector = 0) {
+                cell.style.backgroundColor = "yellow"
+            }
+            if (@Model.detector > 0) {
+                cell.style.backgroundColor = "yellow"
+            }*/
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FatihAydınHW1Recent/1.0.0": {
+        "runtime": {
+          "FatihAydınHW1Recent.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FatihAydınHW1Recent/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
